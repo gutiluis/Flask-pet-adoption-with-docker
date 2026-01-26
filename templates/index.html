@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block button %}
+    <a class="add-pet-btn" href="{{ url_for('add_pet') }}" alt="Add Pet">
+        <i class="fas fa-plus"></i> {# fas is a fontawesome kit #}
+        Pet
+    </a>
+{% endblock %}
+
+
+
+
+{# this is in layout.html its a different content and same block #}
+{% block content %} {# loop through the section. there is an anchor. the anchor has a div class and image, h2, h3,, p#}
+    <section id="pet-cards">
+        {% for pet in pets %} {# same repeated cards. anchor loop through each pet. tab. indentation after for loop #}
+            <a href="{{ url_for('pet', id=pet.id) }}">
+                <div class="card">
+                    <img src='{{ pet.url }}' alt='{{ pet.url_tag }}'>
+                    <h2>{{ pet.name }}</h2>
+                    <h3>{{ pet.age }}</h3>
+                    <p>{{ pet.description }}</p>
+                </div>
+            </a>
+        {% endfor %} {#used a for loop instead of repeating anchors in html<a /a> . filename remains the same #}
+
+    </section>
+{% endblock %}
