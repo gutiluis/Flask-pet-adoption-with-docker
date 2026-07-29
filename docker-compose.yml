@@ -10,7 +10,8 @@ services:
       MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
       MYSQL_DATABASE: pet_adoption_db
       MYSQL_USER: flask_user
-      MYSQL_PASSWORD: flask_password # hash
+      # TODO: Hash in pydot-env
+      MYSQL_PASSWORD: flask_password
     ports:
       - "3306:3306"
     volumes:

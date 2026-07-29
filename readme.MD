@@ -3,30 +3,9 @@
 
 # Pet adoption web APP with Docker
 
-sqlalchemy,
-    db_model
-flasksqlalchemy,
-    jinja
-docker compose
-mysql db inside .yml
-html
-    templates
-css
-    bootstrap
-javascript
-    dropdown menu
-pymysql
-    use docker with mysql server
-flask,
-    request,
-        -proxy
-        -access incoming request data after using url_for and GET and POST methods
-    url_for,
-        send-subbmit the html form. not just leave it in the browser user-agent as a post request
-    render_template
-    redirect
+docker image and container running in a usb with a mysql db, sqlalchemy and flask
 
-### docker image and container runs in a usb with mysql db
+---
 
 ## How it works:
 ### to run the table model and server. not the db:
@@ -38,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### run docker. once the docker image is in the system
-### make new container
+### make new detached container
 
 ```
 docker compose up -d
@@ -56,12 +35,18 @@ python3 app.py
 ### check as mysql root
 ### do not use root in flask
 
+### empty password
+
 ```
-docker exec -it mysql-usb mysql -uroot -p # empty password
+docker exec -it mysql-usb mysql -uroot -p
 ```
 
 ### login as flask_user to mysql. should have all privileges already to create tables
-docker exec -it mysql-usb mysql -uflask_user -p
+
+```
+docker exec -it mysql-usb mysql -u flask_user -p
+```
+
 ### docker mysql password
 flask_password
 ### check mysql user
@@ -235,7 +220,6 @@ comments
 <input id="alt" name="alt" type="text" placeholder="This photo is..." value="{{ pet.url_tag }}">
 
 
-
 ### handling application errors from flask official documentation
 - client terminated the request early and the application was still reading from the incoming data
 - the database server as overloaded and could not handle the query
@@ -244,6 +228,7 @@ comments
 - backend server overloaded
 - programming error in a used library
 - network connection of the server to another system failed
+
 ### flask custom error pages
 https://werkzeug.palletsprojects.com/en/stable/exceptions/#werkzeug.exceptions.HTTPException
 ### error logging tools
@@ -265,11 +250,45 @@ https://werkzeug.palletsprojects.com/en/stable/exceptions/#werkzeug.exceptions.H
 
 ---
 
+## Features
+
+- Custom error pages
+- Flask server
+- Template inheritance in jinja2
+- Containerized
+- Relational database and table schema
+- JavaScript dropdown menu
+- Flask requests proxy to access inconming request data afer using url_for and GET and POST mehtods
+- Flask url_for which sends-submits the html form. not just leaves it in the browser user-agent as a **POST** request
+- Flask render_template and redirection
+
+---
+
+## Tech-Stack
+
+- Python
+- HTML
+- Flask
+- Docker
+- Flask-SQLAlchemy
+- SQLAlchemy
+- JavaScript
+- CSS
+- Jinja2
+- MySQL
+- Bootstrap
+
+---
+
 ## Contributing
+
+If you are interested in reporting/fixing issues and contributing directly to the code base, please see CONTRIBUTING.md for more information on what we're looking for and how to get started.
 
 ---
 
 ## Community
+
+Info on reporting bugs, getting help, finding third-party tools and sample apps, and more can be found on the Community page.
 
 ---
 
