@@ -289,7 +289,7 @@ If you are interested in reporting/fixing issues and contributing directly to th
 ## Community
 
 Info on reporting bugs, getting help, finding third-party tools and sample apps, and more can be found on our **Community** channels:
-* **Discord:** [Join the technobool Community](https://discord.gg/1276907162332954687)
+* **Discord:** [Join the technobool Community](https://discord.gg/1532111090052370642)
 * **Slack Workspace:** [technobool.slack.com](https://technobool.slack.com)
 * **GitHub Discussions:** [Open a discussion](https://github.com/gutiluis/Flask-pet-adoption-with-docker/discussions)
 
