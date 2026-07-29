@@ -1,3 +1,8 @@
+> [!WARNING]
+> CURRENTLY UNDER DEVELOPMENT
+
+# Pet adoption web APP with Docker
+
 sqlalchemy,
     db_model
 flasksqlalchemy,
@@ -23,10 +28,14 @@ flask,
 
 # docker image and container runs in a usb with mysql db
 
+## How it works:
 # to run the table model and server. not the db:
+
+```
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 # maybe initialize first mysql and then the orm mapper of sqlalchemy in python????
 
@@ -245,3 +254,5 @@ https://werkzeug.palletsprojects.com/en/stable/exceptions/#werkzeug.exceptions.H
 # what is href attribute in html?
     - hypertext reference
 # what is anchor in html?
+
+---
