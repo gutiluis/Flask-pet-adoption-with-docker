@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+
+# file: models.py
+# descr:
+
+
 from flask import Flask
 import datetime
 from flask_sqlalchemy import SQLAlchemy

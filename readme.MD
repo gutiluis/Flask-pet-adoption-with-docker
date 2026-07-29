@@ -241,11 +241,11 @@ https://werkzeug.palletsprojects.com/en/stable/exceptions/#werkzeug.exceptions.H
 ### javascript using html class
 
 ### what is a class attribute in html?
-    - a class is reusable in several files
+- a class is reusable in several files
 ### what is an id attribute in html?
-    - only one id per page
+- only one id per page
 ### what is href attribute in html?
-    - hypertext reference
+- hypertext reference
 ### what is anchor in html?
 
 ---
