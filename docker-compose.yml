@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: mysql-usb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ""
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+      MYSQL_DATABASE: pet_adoption_db
+      MYSQL_USER: flask_user
+      MYSQL_PASSWORD: flask_password # hash
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/var/lib/mysql
