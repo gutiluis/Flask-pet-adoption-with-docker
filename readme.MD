@@ -286,6 +286,18 @@ If you are interested in reporting/fixing issues and contributing directly to th
 
 ---
 
+## Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](https://github.com/gutiluis/.github/blob/main/CODE_OF_CONDUCT.md).
+
+---
+
+## Security Policy
+
+If you discover a security vulnerability, please review our [Security Policy](https://github.com/gutiluis/.github/blob/main/SECURITY.md) for reporting guidelines.
+
+---
+
 ## Support
 
 If you run into any issues or have questions, please check our [SUPPORT.md](https://github.com/gutiluis/.github/blob/main/SUPPORT.md) file for guidance, or reach out through one of our community channels below.
