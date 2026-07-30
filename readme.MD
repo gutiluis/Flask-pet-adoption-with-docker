@@ -286,6 +286,12 @@ If you are interested in reporting/fixing issues and contributing directly to th
 
 ---
 
+## Support
+
+If you run into any issues or have questions, please check our [SUPPORT.md](https://github.com/gutiluis/.github/blob/main/SUPPORT.md) file for guidance, or reach out through one of our community channels below.
+
+---
+
 ## Community
 
 Info on reporting bugs, getting help, finding third-party tools and sample apps, and more can be found on our **Community** channels:
