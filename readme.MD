@@ -1,7 +1,7 @@
 > [!WARNING]
 > CURRENTLY UNDER DEVELOPMENT
 
-# Pet adoption web APP with Docker
+# Pet adoption App with Docker
 
 docker image and container running in a usb with a mysql db, sqlalchemy and flask
 
