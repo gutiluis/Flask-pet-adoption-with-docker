@@ -1,13 +1,13 @@
 > [!WARNING]
 > CURRENTLY UNDER DEVELOPMENT
 
-# Pet adoption App with Docker
+# Pet adoption Web with Docker
 
-docker image and container running in a usb with a mysql db, sqlalchemy and flask
+Docker image and container running in a usb with a mysql db, sqlalchemy and flask
 
 ---
 
-## How it works:
+## How it works
 ### to run the table model and server. not the db:
 
 ```
